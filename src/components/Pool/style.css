@@ -1,0 +1,13 @@
+.inner_title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.pool_article {
+  width: clamp(19rem, 90vw, 40rem);
+}
+
+.pool_article > button {
+  margin-top: 1rem;
+}

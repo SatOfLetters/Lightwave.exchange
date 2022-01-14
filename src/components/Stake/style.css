@@ -1,0 +1,16 @@
+.stake_columns .col1,
+.stake_columns .stake_col {
+  width: 20%;
+}
+.stake_columns .col2,
+.stake_columns .tvl_col {
+  width: 20%;
+}
+.stake_columns .col3,
+.stake_columns .rewards_col {
+  width: 40%;
+}
+.stake_columns .col4,
+.stake_columns .apr_col {
+  width: 20%;
+}

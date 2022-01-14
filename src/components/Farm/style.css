@@ -1,0 +1,41 @@
+.info_box h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.info_box h2 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+
+.info_ctnr {
+  margin: 1.5rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.info_ctnr p {
+  font-size: 1.6rem;
+}
+
+.info_columns {
+  display: flex;
+}
+
+.farm_columns .col1,
+.farm_columns .liquidity_col {
+  width: 40%;
+}
+.farm_columns .col2,
+.farm_columns .tvl_col {
+  width: 40%;
+}
+.farm_columns .col3,
+.farm_columns .apr_col {
+  width: 20%;
+}
+
+@media (orientation: landscape) and (min-width: 900px) {
+  .info_box {
+    width: clamp(19rem, 25vw, 26rem);
+  }
+}

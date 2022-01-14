@@ -1,0 +1,51 @@
+.button {
+  position: relative;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  border: none;
+  background: none;
+  color: white;
+  background-color: var(--c1);
+  transition: background-color 0.2s ease;
+}
+.button:hover {
+  transition: background-color 0.05s ease;
+  background-color: #212a50;
+}
+
+.button.button_alt {
+  width: 100%;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: -1.5px;
+  background-image: linear-gradient(30deg, var(--c2), var(--c3), var(--c4));
+  background-color: var(--c1);
+  z-index: -1;
+  border-radius: 0.3rem;
+}
+
+@media (orientation: landscape) and (min-width: 900px) {
+  .button {
+    cursor: pointer;
+  }
+}
+
+/* .button {
+  position: relative;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  border: none;
+  background: none;
+  color: white;
+  background: var(--c1);
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+} */

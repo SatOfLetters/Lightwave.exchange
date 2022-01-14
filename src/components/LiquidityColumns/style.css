@@ -1,0 +1,51 @@
+.liquidity_wrapped,
+.stake_wrapped {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  padding: 0 1rem;
+  position: relative;
+  left: -1rem;
+  margin: 1rem 0 0 0;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  box-sizing: content-box;
+  cursor: pointer;
+  text-align: left;
+}
+
+.tvl_col,
+.apr_col {
+  font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+}
+
+.liq_rows {
+}
+
+.liquidity_col {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.liquidity_col img {
+  width: clamp(1.6rem, 3vw, 2.2rem);
+  object-fit: contain;
+}
+.liquidity_col div {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(0.8rem, 3vw, 0.9rem);
+  gap: clamp(0.1rem, 0.5vw, 0.3rem);
+}
+
+.apr_col {
+  display: flex;
+  flex-direction: column;
+}
+.apr_col sub {
+  color: #999;
+}

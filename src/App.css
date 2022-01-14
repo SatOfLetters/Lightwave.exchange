@@ -1,0 +1,96 @@
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  cursor: default;
+}
+
+:root {
+  --c1: #191f37;
+  --c2: #39beeb;
+  --c3: #f2b711;
+  --c4: #ea2f96;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--c1);
+  color: white;
+  overflow-x: hidden;
+}
+
+body,
+button,
+input {
+  font-family: "ObjektivMk1", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+b {
+  font-weight: 900;
+}
+
+img {
+  user-select: none;
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: VAR(--c1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: VAR(--c2);
+}
+
+section {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+section article {
+  width: clamp(19rem, 90vw, 26rem);
+  border-radius: 1rem;
+  box-shadow: 0 0rem 8rem -2rem #444;
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  box-sizing: border-box;
+  color: white;
+}
+
+@media (orientation: landscape) and (min-width: 900px) {
+  section {
+    padding-top: 25vh;
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: unset;
+  }
+
+  .wide_article {
+    width: clamp(19rem, 50vw, 42rem);
+  }
+}
