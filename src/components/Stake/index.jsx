@@ -1,11 +1,12 @@
 import "./style.css";
+import data from "../../assets/JSON/stakes.json";
 
-import LiquidityColumns from "../LiquidityColumns";
-
-import data from "../../assets/JSON/liquidities.json";
+import tok1 from "../../assets/TOK1.png"
+import tok2 from "../../assets/TOK2.png"
+import StakeColumn from "../StakeColumn";
 
 const Stake = () => {
-  console.log(data[0].token1)
+  
   return (
     <section>
       <article className="info_box">
@@ -36,26 +37,9 @@ const Stake = () => {
           <div className="col4">APR</div>
         </div>
 
-        <div className="liq_rows">
-          <div role="button" className='stake_wrapped stake_columns'>
-            <div className="stake_col">
-              
-            </div>
-
-            <div className="tvl_col">
-
-            </div>
-
-            <div className="rewards_col">
-
-            </div>
-
-            <div className="apr_col">
-                423%
-                <sub>annualized</sub>
-            </div>
-          </div>
-        </div>
+        {
+          data.map((item) => (<StakeColumn key={item.ID} token1={item.token1} token2={item.token2} apr={423}/>))
+        }
       </article>
     </section>
   );

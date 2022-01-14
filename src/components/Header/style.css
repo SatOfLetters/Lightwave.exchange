@@ -6,7 +6,6 @@ header {
   align-items: center;
   width: 100%;
   z-index: 2;
-  margin-bottom: 1rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--c2);
 }
@@ -88,7 +87,6 @@ nav a {
   }
 
   header {
-    position: fixed;
     flex-direction: row;
     width: clamp(10rem, 53vw, 45rem);
     left: clamp(3rem, 5vw, 5rem);
@@ -106,6 +104,7 @@ nav a {
     padding: 1rem 1.5vw;
     transition: background-color 0.2s ease;
     background-color: rgba(255, 255, 255, 0);
+    border-radius: 0.3rem;
   }
   nav a:hover {
     background-color: rgba(255, 255, 255, 0.1);
