@@ -3,7 +3,7 @@ import Logo from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
 import { useState, useRef } from "react";
 import { useMediaQuery } from 'react-responsive'
-import token1Thumb from "../../assets/TOK1.png"
+import token1Thumb from "../../assets/LWAVE.png"
 import ConnectWalletBt from "../ConnectWallletBt";
 
 const Header = () => {

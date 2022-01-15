@@ -11,7 +11,7 @@ header {
 }
 
 .logo {
-  width: clamp(12rem, 50vw, 14rem);
+  width: clamp(12rem, 50vw, 13rem);
 }
 
 .flex_header {
@@ -39,15 +39,18 @@ header {
 
 nav {
   width: clamp(20rem, 70vw, 35rem);
-  margin: 2rem 0 0 0;
-  display: flex;
-  flex-direction: column;
+  margin: 2rem 0 -1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
 }
 nav a {
   color: white;
-  padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  margin: 0.2rem 0;
+  padding: 0.6rem 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 0.3rem;
 }
 
 .connect_wallet {
@@ -68,7 +71,7 @@ nav a {
 .token_price {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 0.5rem;
-  border-radius: 0.6rem;
+  border-radius: 0.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,14 +98,18 @@ nav a {
   }
 
   nav {
+    display: flex;
     flex-direction: row;
     flex: 0 1;
-    margin: 2rem auto 0 auto;
+    margin: 1rem auto 0 auto;
+    gap: unset;
   }
   nav a {
     padding: 1rem 1.5vw;
     transition: border-color 0.3s ease;
     background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 0;
     border-bottom: 2px solid;
     border-color: transparent;
   }
@@ -115,6 +122,7 @@ nav a {
     width: unset;
     position: absolute;
     left: 3rem;
+    margin: 1rem 0 0 0;
   }
 
   .connect_wallet {
@@ -123,17 +131,19 @@ nav a {
     left: unset;
     right: 3rem;
     padding: 0;
-    gap: 1.4rem;
+    gap: 1rem;
     background: none;
     border-top: none;
     backdrop-filter: none;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: self-end;
   }
   .connect_wallet button {
     cursor: pointer;
   }
 
   .token_price {
-    background-color: transparent;
-    padding: 0;
+    padding: 0.5rem 0.8rem;
   }
 }

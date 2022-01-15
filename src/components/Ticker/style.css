@@ -1,0 +1,103 @@
+footer {
+  padding: 0rem 1.5rem;
+  margin: 0rem 0 8rem 0;
+  box-sizing: border-box;
+}
+
+footer > div {
+  width: clamp(19rem, 80vw, 29rem);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 auto;
+  align-items: inherit;
+}
+
+footer div span {
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0.2rem 0.6rem -0.2rem #000;
+  border: 1px solid #333;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  animation: float 2.4s ease-in-out infinite alternate;
+  text-shadow: 2px 1px black;
+  flex: 1 1;
+}
+footer div span b {
+  color: var(--c2);
+}
+
+footer div span:nth-child(1) {
+  animation-delay: 0s;
+}
+footer div span:nth-child(2) {
+  animation-delay: 1.2s;
+}
+footer div span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+footer div span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+footer div span:nth-child(5) {
+  animation-delay: 1s;
+}
+footer div span:nth-child(6) {
+  animation-delay: 0.9s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0rem, 0rem);
+  }
+  100% {
+    transform: translate(0.1rem, -0.4rem);
+  }
+}
+
+@media (orientation: landscape) and (min-width: 900px) {
+  footer {
+    position: fixed;
+    bottom: 0.5rem;
+    gap: 1rem;
+    margin: 0;
+    overflow: hidden;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  footer div span {
+    white-space: nowrap;
+    text-align: center;
+    flex: 0;
+  }
+
+  @keyframes move_ticker {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  footer > div {
+    animation: move_ticker 90s linear infinite;
+    flex-flow: row;
+    animation-fill-mode: forwards;
+    display: inline-flex;
+    width: 100vw;
+  }
+  footer > div:hover {
+    animation-play-state: paused;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  footer div span {
+    animation: none;
+  }
+}
