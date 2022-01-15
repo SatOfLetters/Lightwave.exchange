@@ -4,7 +4,8 @@
   inset: 0;
   background-size: cover;
   background-position: center;
-  animation: hueRotate 45s linear infinite;
+  animation: hueRotate 45s linear infinite,
+    scaleBg 10s ease-in-out infinite alternate-reverse;
   z-index: -1;
 }
 
@@ -14,5 +15,14 @@
   }
   100% {
     filter: hue-rotate(-360deg);
+  }
+}
+
+@keyframes scaleBg {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(3deg);
   }
 }
