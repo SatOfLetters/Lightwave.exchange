@@ -5,22 +5,32 @@ import StakeColumn from "../StakeColumn";
 const Stake = () => {
   
   return (
-    <section>
-        <h2><b>Stake:</b> Lock ATOM to receive LWAVE token. The longer you lock, the more LWAVE you will receive.</h2>
+    <>
+      <section>
+          <h2><b>Stake:</b> Lock ATOM to receive LWAVE token. The longer you lock, the more LWAVE you will receive.</h2>
 
-      <article className="wide_article">
-        <div className="info_columns stake_columns">
-          <div className="col1">Stake</div>
-          <div className="col2">TVL</div>
-          <div className="col3">Rewards</div>
-          <div className="col4">APR</div>
-        </div>
+        <article className="wide_article">
+          <div className="info_columns stake_columns">
+            <div className="col1">Stake</div>
+            <div className="col2">TVL</div>
+            <div className="col3">Rewards</div>
+            <div className="col4">APR</div>
+          </div>
 
-        {
-          data.map((item) => (<StakeColumn key={item.ID} token1={item.token1} token2={item.token2} apr={423}/>))
-        }
-      </article>
-    </section>
+          {
+            data.map((item) => (<StakeColumn key={item.ID} token1={item.token1} token2={item.token2} apr={423}/>))
+          }
+        </article>
+      </section>
+    
+      <footer>
+          <div>
+              <span>TOTAL ATOM LOCKED: <b>947.283</b></span>
+              <span>TOTAL LWAVE MINTED: <b>193.457</b></span>
+              <span>TOTAL LWAVE STAKED: <b>294.323</b></span>
+          </div>
+      </footer>
+    </>
   );
 };
 

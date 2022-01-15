@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   animation: hueRotate 45s linear infinite,
-    scaleBg 10s ease-in-out infinite alternate-reverse;
+    scaleBg 15s ease-in-out infinite alternate-reverse;
   z-index: -1;
 }
 
@@ -20,9 +20,9 @@
 
 @keyframes scaleBg {
   0% {
-    transform: scale(1) rotate(0deg);
+    transform: scale(1);
   }
   100% {
-    transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1);
   }
 }

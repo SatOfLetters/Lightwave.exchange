@@ -4,11 +4,14 @@ import LiquidityColumns from "../LiquidityColumns";
 
 import data from "../../assets/JSON/liquidities.json";
 
+import FarmTicker from "../FarmTicker";
+
 const Farm = () => {
   console.log(data[0].token1)
   return (
+    <>
     <section>
-        <h2><b>Farms: </b>Stake liquidity pool tokens to earn rewards in LWAVE.</h2>
+        <h2><b>Farm: </b>Stake liquidity pool tokens to earn rewards in LWAVE.</h2>
 
       <article className="wide_article">
         <div className="info_columns farm_columns">
@@ -24,6 +27,12 @@ const Farm = () => {
         </div>
       </article>
     </section>
+
+    <FarmTicker/>
+    
+    </>
+
+
   );
 };
 

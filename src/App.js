@@ -6,7 +6,6 @@ import Swap from './components/Swap'
 import Pool from './components/Pool'
 import Farm from './components/Farm'
 import Stake from './components/Stake'
-import Ticker from "./components/Ticker";
 
 function RouteWrapped() {
   return (
@@ -14,7 +13,6 @@ function RouteWrapped() {
       <BackgroundImg />
       <Header />
       <Outlet />
-      <Ticker />
     </div>
   )
 }
