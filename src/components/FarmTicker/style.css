@@ -18,16 +18,14 @@ footer > div {
 footer div span {
   padding: 0.5rem 1rem;
   text-align: center;
-  background-color: rgb(12 9 22 / 70%);
+  background-color: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-  box-shadow: 0 0.2rem 0.6rem -0.2rem #000;
   border: 1px solid #333;
   border-radius: 0.3rem;
   font-size: 0.8rem;
   letter-spacing: 1px;
   /* animation: float 2.4s ease-in-out infinite alternate; */
-  text-shadow: 2px 1px black;
   min-width: clamp(5rem, 30vw, 7rem);
   flex: 1 1;
   display: flex;
@@ -78,19 +76,21 @@ footer div span:nth-child(6) {
     width: max-content;
     min-width: 100%;
   }
-  footer div span {
-    white-space: nowrap;
-    text-align: center;
-    flex: 0;
-    min-width: unset;
-    display: initial;
-  }
 
   footer > div {
     /* animation: move_ticker 90s linear infinite; */
     flex-flow: row wrap-reverse;
     display: inline-flex;
     width: 100vw;
+  }
+
+  footer div span {
+    white-space: nowrap;
+    text-align: center;
+    flex: 0;
+    min-width: unset;
+    display: initial;
+    backdrop-filter: blur(15px);
   }
 }
 
