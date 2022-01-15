@@ -41,7 +41,7 @@ h2 {
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0.2rem;
   font-weight: 900;
   letter-spacing: 0.2rem;
 }
@@ -57,10 +57,9 @@ footer {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   padding: 0rem 1.5rem;
-  margin: 1rem 0 0 0;
-  gap: 0.5rem;
+  margin: 3rem 0 0 0;
+  gap: 0.6rem;
   box-sizing: border-box;
 }
 
