@@ -66,16 +66,19 @@ footer {
 
 footer > div {
   padding: 0.5rem 1rem;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(33 42 80 / 50%);
   box-shadow: 0 0.2rem 0.6rem -0.2rem #000;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  border: 1px solid #333;
+  border: 1px solid #346;
   border-radius: 0.4rem;
   font-size: 0.8rem;
   letter-spacing: 1px;
   animation: float 2.4s ease-in-out infinite alternate;
   text-shadow: 2px 1px black;
+}
+footer > div b {
+  color: var(--c2);
 }
 
 footer > div:nth-child(1) {

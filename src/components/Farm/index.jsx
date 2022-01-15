@@ -46,9 +46,9 @@ const Farm = () => {
       </article>
 
       <footer>
-        <div>TVL $58.391.058</div>
-        <div>FARMS TVL $54.132.112</div>
-        <div>YOUR HOLDINGS $00.00</div>
+        <div>TVL <b>$58.391.058</b></div>
+        <div>FARMS TVL <b>$54.132.112</b></div>
+        <div>YOUR HOLDINGS <b>$00.00</b></div>
       </footer>
     </section>
   );

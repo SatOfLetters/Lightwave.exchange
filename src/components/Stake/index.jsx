@@ -26,7 +26,7 @@ const Stake = () => {
         </div>
       </article> */}
       <h1>STAKE</h1>
-      <h2>Lock ATOM to receive LWAVE token. The longer you lock the more LWAVE you will receive.</h2>
+      <h2>Lock ATOM to receive LWAVE token. The longer you lock, the more LWAVE you will receive.</h2>
 
       <article className="wide_article">
         <div className="info_columns stake_columns">
@@ -42,9 +42,9 @@ const Stake = () => {
       </article>
 
       <footer>
-        <div>TOTAL ATOM LOCKED: 947.283</div>
-        <div>TOTAL LWAVE MINTED: 193.457</div>
-        <div>TOTAL LWAVE STAKED: 294.323</div>
+        <div>TOTAL ATOM LOCKED: <b>947.283</b></div>
+        <div>TOTAL LWAVE MINTED: <b>193.457</b></div>
+        <div>TOTAL LWAVE STAKED: <b>294.323</b></div>
       </footer>
     </section>
   );
