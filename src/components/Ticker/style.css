@@ -67,7 +67,8 @@ footer div span:nth-child(6) {
     margin: 0;
     overflow: hidden;
     padding: 1rem 0;
-    width: 100%;
+    width: max-content;
+    min-width: 100%;
   }
   footer div span {
     white-space: nowrap;
