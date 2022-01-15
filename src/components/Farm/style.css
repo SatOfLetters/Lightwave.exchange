@@ -23,7 +23,7 @@
 
 .farm_columns .col1,
 .farm_columns .liquidity_col {
-  width: 40%;
+  width: 45%;
 }
 .farm_columns .col2,
 .farm_columns .tvl_col {
@@ -34,8 +34,83 @@
   width: 20%;
 }
 
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+}
+
+h2 {
+  font-size: clamp(1rem, 4.5vw, 1.3rem);
+  width: clamp(19rem, 80vw, 35rem);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0rem 1.5rem;
+  margin: 1rem 0 0 0;
+  gap: 0.5rem;
+  box-sizing: border-box;
+}
+
+footer > div {
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0.2rem 0.6rem -0.2rem #000;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border: 1px solid #333;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  animation: float 2.4s ease-in-out infinite alternate;
+  text-shadow: 2px 1px black;
+}
+
+footer > div:nth-child(1) {
+  animation-delay: 0s;
+}
+footer > div:nth-child(2) {
+  animation-delay: 0.6s;
+}
+footer > div:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0rem, 0rem);
+  }
+  100% {
+    transform: translate(0.1rem, -0.3rem);
+  }
+}
+
 @media (orientation: landscape) and (min-width: 900px) {
   .info_box {
     width: clamp(19rem, 25vw, 26rem);
+  }
+
+  footer {
+    position: fixed;
+    bottom: 2rem;
+    gap: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  footer > div {
+    animation: none;
   }
 }

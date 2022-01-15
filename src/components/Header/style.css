@@ -7,7 +7,7 @@ header {
   width: 100%;
   z-index: 2;
   padding-bottom: 2rem;
-  border-bottom: 1px solid var(--c2);
+  border-bottom: 1px solid #222;
 }
 
 .logo {
@@ -16,7 +16,7 @@ header {
 
 .flex_header {
   display: flex;
-  width: clamp(20rem, 70vw, 35rem);
+  width: clamp(18rem, 80vw, 35rem);
   justify-content: space-between;
   align-items: center;
   margin: 2rem 0 0 0;
@@ -59,7 +59,7 @@ nav a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid var(--c2);
+  border-top: 1px solid #222;
   z-index: 2;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.5);
@@ -88,8 +88,6 @@ nav a {
 
   header {
     flex-direction: row;
-    width: clamp(10rem, 53vw, 45rem);
-    left: clamp(3rem, 5vw, 5rem);
     padding-bottom: 0;
     border-bottom: none;
     gap: 3vw;
@@ -98,7 +96,8 @@ nav a {
 
   nav {
     flex-direction: row;
-    flex: 0;
+    flex: 0 1;
+    margin: 2rem auto 0 auto;
   }
   nav a {
     padding: 1rem 1.5vw;
@@ -113,6 +112,8 @@ nav a {
 
   .flex_header {
     width: unset;
+    position: absolute;
+    left: 3rem;
   }
 
   .connect_wallet {

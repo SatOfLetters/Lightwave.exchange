@@ -26,6 +26,7 @@ body {
   background-color: var(--c1);
   color: white;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body,
@@ -73,18 +74,18 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  margin: 2rem 0 8rem 0;
+  margin: 1rem 0 8rem 0;
 }
 section article {
   width: clamp(19rem, 90vw, 26rem);
   border-radius: 1rem;
-  box-shadow: 0 0rem 8rem -2rem #444;
+  box-shadow: 0 0rem 6rem -2rem #333;
   backdrop-filter: blur(15px);
   background-color: rgba(0, 0, 0, 0.2);
   padding: 2rem;
   box-sizing: border-box;
   color: white;
+  margin-top: 2rem;
 }
 
 .flex {
@@ -92,15 +93,19 @@ section article {
   width: 100%;
 }
 
+.wide_article {
+  padding-bottom: 1rem;
+}
+
 @media (orientation: landscape) and (min-width: 900px) {
   section {
-    padding-top: 5rem;
-    flex-direction: row;
-    align-items: flex-start;
+    padding-top: 2rem;
     min-height: unset;
+    margin: 0;
   }
 
   .wide_article {
-    width: clamp(19rem, 50vw, 42rem);
+    width: clamp(19rem, 80vw, 50rem);
+    margin-bottom: 6rem;
   }
 }

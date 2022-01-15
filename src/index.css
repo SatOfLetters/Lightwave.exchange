@@ -4,3 +4,9 @@
     url("./fonts/ObjektivMk1-Regular.ttf") format("truetype");
   font-weight: 500;
 }
+@font-face {
+  font-family: "ObjektivMk1";
+  src: local("ObjektivMk1"),
+    url("./fonts/ObjektivMk1-Bold.ttf") format("truetype");
+  font-weight: 900;
+}

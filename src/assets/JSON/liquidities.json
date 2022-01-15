@@ -2,65 +2,52 @@
     {
         "ID": 1,
         "token1":{
-            "thumb": "/assets/TOK1.png",
-            "name": "TOK1"
+            "thumb": "/assets/ATOM.png",
+            "name": "ATOM"
         },
 
         "token2":{
-            "thumb": "/assets/TOK2.png",
-            "name": "TOK2"
+            "thumb": "/assets/LWAVE.png",
+            "name": "LWAVE"
         }
     },
     
     {
         "ID": 2,
         "token1":{
-            "thumb": "/assets/TOK1.png",
-            "name": "TOK4"
+            "thumb": "/assets/ATOM.png",
+            "name": "ATOM"
         },
 
         "token2":{
-            "thumb": "/assets/TOK2.png",
-            "name": "TOK7"
+            "thumb": "/assets/LWAVE.png",
+            "name": "LWAVE"
         }
     },
     
     {
         "ID": 3,
         "token1":{
-            "thumb": "/assets/TOK1.png",
-            "name": "TOK4"
+            "thumb": "/assets/ATOM.png",
+            "name": "ATOM"
         },
 
         "token2":{
-            "thumb": "/assets/TOK2.png",
-            "name": "TOK1"
+            "thumb": "/assets/LWAVE.png",
+            "name": "LWAVE"
         }
     },
     
     {
         "ID": 4,
         "token1":{
-            "thumb": "/assets/TOK1.png",
-            "name": "TOK2"
+            "thumb": "/assets/ATOM.png",
+            "name": "ATOM"
         },
 
         "token2":{
-            "thumb": "/assets/TOK2.png",
-            "name": "TOK9"
-        }
-    },
-    
-    {
-        "ID": 5,
-        "token1":{
-            "thumb": "/assets/TOK1.png",
-            "name": "TOK4"
-        },
-
-        "token2":{
-            "thumb": "/assets/TOK2.png",
-            "name": "TOK7"
+            "thumb": "/assets/LWAVE.png",
+            "name": "LWAVE"
         }
     }
 ]

@@ -2,52 +2,17 @@
     {
         "ID": 1,
         "token1":{
-            "thumb": "/assets/TOK1.png",
-            "name": "TOK1",
+            "thumb": "/assets/ATOM.png",
+            "name": "ATOM",
             "TVL": 485284,
             "rewards": 1234
         },
 
         "token2":{
-            "thumb": "/assets/TOK2.png",
-            "name": "TOK2",
-            "TVL": 485284,
-            "rewards": 1234
-        }
-    },
-    
-    {
-        "ID": 2,
-        "token1":{
-            "thumb": "/assets/TOK1.png",
-            "name": "TOK4",
-            "TVL": 485284,
-            "rewards": 1234
-        },
-
-        "token2":{
-            "thumb": "/assets/TOK2.png",
-            "name": "TOK7",
-            "TVL": 485284,
-            "rewards": 1234
-        }
-    },
-    
-    {
-        "ID": 3,
-        "token1":{
-            "thumb": "/assets/TOK1.png",
-            "name": "TOK4",
-            "TVL": 485284,
-            "rewards": 1234
-        },
-
-        "token2":{
-            "thumb": "/assets/TOK2.png",
-            "name": "TOK1",
+            "thumb": "/assets/LWAVE.png",
+            "name": "LWAVE",
             "TVL": 485284,
             "rewards": 1234
         }
     }
-
 ]

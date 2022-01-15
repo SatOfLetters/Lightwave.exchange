@@ -8,7 +8,7 @@ const Farm = () => {
   console.log(data[0].token1)
   return (
     <section>
-      <article className="info_box">
+      {/* <article className="info_box">
         <h1>Farms</h1>
         <h2>Stake liquidity pool tokens to earn rewards in TOKEN.</h2>
 
@@ -26,7 +26,10 @@ const Farm = () => {
           <span>My Holdings</span>
           <p>$0.00</p>
         </div>
-      </article>
+      </article> */}
+      
+      <h1>FARMS</h1>
+      <h2>Stake liquidity pool tokens to earn rewards in TOKEN.</h2>
 
       <article className="wide_article">
         <div className="info_columns farm_columns">
@@ -41,6 +44,12 @@ const Farm = () => {
           ))}
         </div>
       </article>
+
+      <footer>
+        <div>TVL $58.391.058</div>
+        <div>FARMS TVL $54.132.112</div>
+        <div>YOUR HOLDINGS $00.00</div>
+      </footer>
     </section>
   );
 };

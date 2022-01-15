@@ -1,7 +1,7 @@
 import "./style.css"
 import settingSvg from "../../assets/settings.svg"
-import token1Thumb from "../../assets/TOK1.png"
-import token2Thumb from "../../assets/TOK2.png"
+import token1Thumb from "../../assets/ATOM.png"
+import token2Thumb from "../../assets/LWAVE.png"
 import invertSwap from "../../assets/invert_swap.svg"
 import ConnectWalletBt from "../ConnectWallletBt";
 
@@ -25,7 +25,7 @@ const Swap = () => {
                   <input type="number" placeholder="0.0" />
                   <button>
                     <img src={token1Thumb}/>
-                    <p>TOK1</p>
+                    <p>ATOM</p>
                     <span></span>
                   </button>
                 </div>
@@ -41,7 +41,7 @@ const Swap = () => {
                   <input type="number" placeholder="0.0" />
                   <button>
                     <img src={token2Thumb}/>
-                    <p>TOK2</p>
+                    <p>LWAVE</p>
                     <span></span>
                   </button>
                 </div>
