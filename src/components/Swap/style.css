@@ -33,8 +33,9 @@
   padding: 1rem;
   font-size: 1.1rem;
   width: 100%;
-  background-color: #222;
+  background-color: rgba(255, 255, 255, 0.05);
   color: white;
+  transition: background-color 0.2s ease;
 }
 .token_input button {
   display: flex;
@@ -43,7 +44,7 @@
   border: none;
   align-items: center;
   border-radius: 0 0.3rem 0.3rem 0;
-  background-color: #333333;
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
   padding: 0 1rem;
   cursor: pointer;
@@ -51,7 +52,13 @@
 }
 .token_input button:hover {
   transition: background-color 0.05s ease;
-  background-color: #3f3f3f;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.token_input input:focus {
+  transition: background-color 0.05s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
 }
 .token_input button img {
   width: clamp(1.8rem, 2vw, 2rem);

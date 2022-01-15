@@ -77,15 +77,15 @@ section {
   margin: 1rem 0 3rem 0;
 }
 section article {
-  width: clamp(19rem, 90vw, 26rem);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   border-radius: 1rem;
-  box-shadow: 0 0rem 6rem -2rem #333;
-  backdrop-filter: blur(15px);
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 2rem;
+  box-shadow: 0 0 6rem -2rem #445;
   box-sizing: border-box;
-  color: white;
+  color: #fff;
   margin-top: 1.5rem;
+  padding: 2rem;
+  width: clamp(19rem, 90vw, 26rem);
 }
 
 .flex {
