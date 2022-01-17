@@ -8,25 +8,27 @@ import ConnectWalletBt from "../ConnectWallletBt";
 
 const Header = () => {
 
-    const isDesktopOrLaptop = useMediaQuery({
-        query: '(min-width: 900px)'
-      })
-    const buttonRef = useRef(null)
-    const [ menu, setMenu ] = useState(false)
-    
-    const validation = isDesktopOrLaptop && !menu ? true : !isDesktopOrLaptop && menu ? true : false
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 900px)'
+  })
+  const buttonRef = useRef(null)
+  const [menu, setMenu] = useState(false)
+
+  const validation = isDesktopOrLaptop && !menu ? true : !isDesktopOrLaptop && menu ? true : false
 
   return (
     <header>
-        <div className="flex_header">
-            <img src={Logo} className="logo" />
+      <div className="flex_header">
+        <a href="https://lightwave.exchange">
+          <img src={Logo} className="logo" />
+        </a>
 
-            <button className="hambt" onClick={() => setMenu(!menu)} ref={buttonRef}>
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-        </div>
+        <button className="hambt" onClick={() => setMenu(!menu)} ref={buttonRef}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+      </div>
 
       {validation && <nav>
         <Link to="/">Swap</Link>
@@ -34,13 +36,13 @@ const Header = () => {
         <Link to="/farm">Farm</Link>
         <Link to="/stake">Stake</Link>
       </nav>}
-      
+
       <div className="connect_wallet">
         <div className="token_price">
-          <img src={token1Thumb}/>
+          <img src={token1Thumb} />
           <span>$0.00</span>
         </div>
-        <ConnectWalletBt/>
+        <ConnectWalletBt />
       </div>
     </header>
   );
